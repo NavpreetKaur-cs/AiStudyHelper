@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#1e3a8a;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h2{
+    font-size:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:600;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+
+.hero{
+    text-align:center;
+    padding:90px 10%;
+    background:white;
+}
+
+.hero h1{
+    font-size:55px;
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+    color:#555;
+}
+
+.hero button{
+    margin-top:30px;
+    padding:14px 30px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    background:#1d4ed8;
+}
+
+
+.features{
+    padding:70px 8%;
+    text-align:center;
+}
+
+.features h2{
+    color:#1e3a8a;
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+.card-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:420px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    text-align:left;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+    font-size:20px;
+}
+
+.card h4 {
+    color: #3b82f6;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.card p{
+    margin-bottom:15px;
+    color:#666;
+}
+
+.card ul{
+    margin: 12px 0 15px 25px;
+    padding-left: 0;
+}
+
+.card li{
+    margin-bottom:10px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.workflow{
+    background:white;
+    padding:70px 8%;
+}
+
+.workflow h2{
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:30px;
+    font-size:36px;
+}
+
+.workflow h3 {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.workflow ol{
+    max-width:700px;
+    margin:auto;
+    padding-left: 30px;
+}
+
+.workflow li{
+    margin-bottom:18px;
+    font-size:16px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.workflow li strong {
+    color: #1e3a8a;
+    font-size: 17px;
+}
+
+footer{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}

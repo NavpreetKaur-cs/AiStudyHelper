@@ -10,14 +10,18 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 connectDB();
 
 const authRoutes = require('./routes/authRoutes');
 app.use('/api/auth', authRoutes);
 
-const testRoutes = require('./routes/testRoute');
-app.use('/api', testRoutes);
+const quizRoutes = require("./routes/quizRoutes");
+app.use("/api/quiz", quizRoutes);
+
+const summaryRoutes = require("./routes/summaryRoutes");
+app.use("/api/summary", summaryRoutes);
 
 const PORT = process.env.PORT || 5000;
 

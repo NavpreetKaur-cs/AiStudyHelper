@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Intella</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+    <header>
+        <h1>Intella Dashboard</h1>
+        <p>Your AI-Powered Study Assistant</p>
+
+        <p class=""logout">
+            <a href="login.html">Logout</a>
+        </p>
+    </header>
+
+    <main>
+        <h2>Dashboard Overview</h2>
+
+        <div class="cards-row">
+
+            <div class="card">
+                <h3>📄 Summarize Notes</h3>
+                <p>
+                    Upload PDFs or paste text and generate concise,
+                    easy-to-understand study notes instantly.
+                </p>
+                <h4>Available Options:</h4>
+                <ul>
+                    <li>PDF Upload</li>
+                    <li>Text Input</li>
+                    <li>AI Notes Generation</li>
+                    <li>Save Summaries</li>
+                </ul>
+                <button onclick="window.location.href='summarize.html'">Open Summarizer</button>
+            </div>
+
+            <div class="card">
+                <h3>📝 Generate Test</h3>
+                <p>
+                    Create objective, subjective, or mixed tests from
+                    your study material and improve preparation.
+                </p>
+                <h4>Test Features:</h4>
+                <ul>
+                    <li>MCQ Questions</li>
+                    <li>Subjective Questions</li>
+                    <li>Mixed Tests</li>
+                    <li>Auto Evaluation Ready</li>
+                </ul>
+                <button onclick="window.location.href='test.html'">Create Test</button>
+            </div>
+
+        </div>
+
+        <div class="history-card">
+            <h3>📚 History & Progress</h3>
+            <p>
+                View all previously generated summaries and tests.
+                Continue learning without losing your progress.
+            </p>
+            <h4>What You Can Access:</h4>
+            <ul>
+                <li>All previously generated summaries</li>
+                <li>Previously created tests</li>
+                <li>Study progress tracking</li>
+                <li>Notes and test statistics</li>
+            </ul>
+            <button onclick="window.location.href='history.html'">View History</button>
+        </div>
+
+    </main>
+
+</body>
+</html>

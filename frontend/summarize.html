@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Summarize | Intella</title>
+    <link rel="stylesheet" href="css/feature-pages.css">
+</head>
+<body>
+
+    <header>
+        <h1>📄 AI Summarizer</h1>
+        <p>Generate concise notes from PDFs or text</p>
+        <a href="dashboard.html" style="position: absolute; top: 20px; right: 20px; color: white; text-decoration: none; font-size: 14px;">← Back to Dashboard</a>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+            <form id = "box">
+            <h2>Step 1: Upload Study Material</h2>
+            <h3>Choose Input Method:</h3>
+
+            <h4>Option A: Upload PDF</h4>
+            <input type="file" id="pdfFile" accept=".pdf">
+
+            <p class="or">OR</p>
+
+            <h4>Option B: Paste Text</h4>
+            <textarea placeholder="Paste your text here..."></textarea>
+
+            <h3>Generate Summary</h3>
+            <button type = "submit">Generate Summary</button>
+            </form>
+
+        </div>
+
+        <div class="card output-card">
+
+            <h2>Step 2: View Summary</h2>
+            <h3>Generated Summary Output:</h3>
+
+            <div class="output">
+                <p>Summary will appear here after you submit your material...</p>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="js/summarize.js"></script>
+
+</body>
+</html>

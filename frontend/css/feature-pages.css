@@ -1,0 +1,328 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    min-height:100vh;
+}
+
+header{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+header h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding:40px 0;
+
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    flex:1;
+    min-width:400px;
+
+    background:white;
+    padding:30px;
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+input[type="file"]{
+    width:100%;
+    margin-bottom:20px;
+}
+
+.or{
+    text-align:center;
+    margin:15px 0;
+    font-weight:bold;
+}
+
+textarea{
+    width:100%;
+    height:200px;
+    resize:none;
+
+    border:1px solid #ccc;
+    border-radius:8px;
+
+    padding:15px;
+    margin-bottom:20px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+
+    border:none;
+    border-radius:8px;
+
+    background:#2563eb;
+    color:white;
+
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+.output-card{
+    min-height:500px;
+}
+
+.output{
+    border:1px solid #ddd;
+    border-radius:10px;
+
+    min-height:350px;
+
+    padding:20px;
+    background:#fafafa;
+}
+
+.output p {
+    color: #333;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* Summary formatting styles */
+.summary-container {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.summary-header {
+    background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+    color: white;
+    padding: 20px !important;
+    margin: 0 !important;
+}
+
+.summary-header h3 {
+    color: white !important;
+    font-size: 20px;
+    margin: 0 0 8px 0 !important;
+}
+
+.summary-header small {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.summary-content {
+    padding: 20px;
+    background: white;
+    color: #333;
+    line-height: 1.8;
+}
+
+.summary-content p {
+    margin-bottom: 15px;
+    color: #444;
+    font-size: 15px;
+}
+
+.summary-content ul {
+    margin: 20px 0;
+    padding-left: 25px;
+    list-style-type: disc;
+}
+
+.summary-content li {
+    margin-bottom: 12px;
+    color: #444;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.summary-content li strong {
+    color: #1976d2;
+    font-weight: 600;
+}
+
+.summary-content strong {
+    color: #1565c0;
+    font-weight: 600;
+}
+
+.summary-content em {
+    color: #d32f2f;
+    font-style: italic;
+}
+
+/* Loading state */
+.loading {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+}
+
+.loading p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Error state */
+.error {
+    background-color: #ffebee;
+    border: 2px solid #d32f2f;
+    border-radius: 8px;
+    padding: 20px;
+    color: #d32f2f;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.error strong {
+    color: #b71c1c;
+}
+
+/* Heading styles */
+h2 {
+    color: #1e3a8a;
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+h3 {
+    color: #2563eb;
+    font-size: 18px;
+    margin-bottom: 12px;
+    margin-top: 15px;
+}
+
+h4 {
+    color: #3b82f6;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+/* List styles */
+ol {
+    margin: 15px 0 20px 0;
+    padding-left: 30px;
+}
+
+ol li {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: #333;
+}
+
+ol li strong {
+    color: #1e3a8a;
+    font-size: 16px;
+}
+
+ul {
+    margin: 12px 0 15px 0;
+    padding-left: 25px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    color: #555;
+    line-height: 1.6;
+}
+
+ul li a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Nested list styles */
+ol li ul {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+ol li ul li {
+    color: #666;
+    font-size: 14px;
+}
+
+.options button {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.history-card ol {
+    list-style-type: decimal;
+}
+
+.options{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.option-btn{
+    flex:1;
+}
+
+.history-container{
+    justify-content:center;
+}
+
+.history-card{
+    width:500px;
+
+    background:white;
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.history-card h2{
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.history-item{
+    background:#f8fafc;
+
+    padding:15px;
+
+    border-radius:8px;
+
+    margin-bottom:12px;
+
+    border-left:4px solid #2563eb;
+}
